@@ -4,7 +4,10 @@ Build AWS AMI with Packer and Terraroform
 
 # Usage
 
-Clone the repositóry
+Buid 
+======
+
+1. Clone the repositóry
 
 ```
 $ git clone  https://github.com/petersonwsantos/packer-terraform-aws-ami.git
@@ -12,7 +15,7 @@ $ cd packer-terraform-aws-ami
 
 ```
 
-Run container with cli tools for building (terraform, packer and awscli).
+2. Run container with cli tools for building (terraform, packer and awscli).
 ```  
 $ docker run -ti  \
 --mount type=bind,source="$(pwd)",target=/code  \
@@ -20,25 +23,30 @@ petersonwsantos/build-ec2-ami \
 bash
 ```
 
-Configure awscli  [_*1_]
+3. Configure awscli  [_*1_]
 ```
 container_#> aws configure
 ```
 
-Build AMI
+4. Build AMI
 ```
 container_#> sh build-ami.sh
 
 ```
-Verfify in your AWS Console / EC2 / AMI.
+5. Verfify in your AWS Console / EC2 / AMI.
 
 
-Remove terraform resources on AWS
-Attention: The AMI created will not be deleted from AWS. Please enter the console and manually delete it in Console / Ec2 / AMI.
+
+Remove 
+=======
+
+1. Remove terraform resources on AWS
 
 ```
 container_#> terraform destroy -force
 ```
+2. Please enter the AWS console and manually delete AMI created. 
+
 
 Finish
 
