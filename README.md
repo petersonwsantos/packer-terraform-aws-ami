@@ -20,7 +20,7 @@ petersonwsantos/build-ec2-ami \
 bash
 ```
 
-3. Configure awscli. [^fn1]
+3. Configure awscli. [**]
 ```
 container_#> aws configure
 ```
@@ -49,7 +49,7 @@ Finish
 
 ----------
 
-[^fn1]: Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
+[**]: Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
 
 ( -v ~/.aws:/root/.aws ) -> With this option you do not need to run aws configure.
 
