@@ -19,8 +19,10 @@ $ docker run -ti  \
 petersonwsantos/build-ec2-ami \
 bash
 ```
+Here is some text.[^fn]
 
-3. Configure awscli  [_*note_]
+
+3. Configure awscli.[^fn]
 ```
 container_#> aws configure
 ```
@@ -49,7 +51,7 @@ Finish
 
 ----------
 
-[_*note_] Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
+[^fn]: Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
 
 ( -v ~/.aws:/root/.aws ) -> With this option you do not need to run aws configure.
 
