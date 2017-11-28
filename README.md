@@ -1,8 +1,5 @@
-# packer-terraform-aws-ami
-Build AWS AMI with Packer and Terraroform
+# Build AWS AMI with Packer and Terraroform
 
-
-# Usage
 
 Buid 
 ======
@@ -23,7 +20,7 @@ petersonwsantos/build-ec2-ami \
 bash
 ```
 
-3. Configure awscli  [_*1_]
+3. Configure awscli  [_*note_]
 ```
 container_#> aws configure
 ```
@@ -52,7 +49,8 @@ Finish
 
 ----------
 
-[_*1_] Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
+[_*note_] Note: If you already have awscli configured on your terminal it is possible to mount the aws configuration file for the container.
+
 ( -v ~/.aws:/root/.aws ) -> With this option you do not need to run aws configure.
 
 Example:
