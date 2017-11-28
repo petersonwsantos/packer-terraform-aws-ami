@@ -32,11 +32,8 @@ container_#> sh build-ami.sh
 ```
 Verfify in your AWS Console / EC2 / AMI.
 
-Remove terraform resources on AWS.
-```
-container_#> sh build-ami.sh
-```
 
+Remove terraform resources on AWS
 Attention: The AMI created will not be deleted from AWS. Please enter the console and manually delete it in Console / Ec2 / AMI.
 
 ```
