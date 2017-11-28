@@ -1,0 +1,8 @@
+.terraform
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+my_ssh_key.pub
+my_ssh_key
+build.log
+amivar.tf
